@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-4 py-4 font-medium relative bg-gray-900 h-16 " style={{maxHeight:"64px"}}>
       {/* Logo */}
-      <NavLink to="/" className="text-xl font-bold text-white">
+      <NavLink  className="text-xl font-bold text-white">
         EduPortfolio
       </NavLink>
 
@@ -23,7 +23,7 @@ const Navbar = () => {
           {links.map((link) => (
             <NavLink
               key={link.name}
-              to={link.path}
+{/*               */}
               className="relative group text-sm font-medium"
             >
               {link.name}
